@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import Greeter from './Greeter';
 import './App.css';
+import Die from './Die';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Greeter person="Divyansh" from="Vellore"/>
+      <Die numSides={20}/>  {/*for using number as props we cant use "20" because then it will be string 20*/}
+      <Die numSides={6}/>
+      <Die numSides={10}/>
     </div>
   );
 }
