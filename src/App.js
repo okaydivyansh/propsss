@@ -4,11 +4,13 @@ import Die from './Die';
 import Listpicker from './Listpicker';
 import Clicker from './Clicker';
 import Counter from './Counter';
+import Toggler from './Toggler';
 //props are data passed to a component. they are immutable
 //numSides is a prop. prop can be seen js has properties, html has attributes and react has props
 function App() {
   return (
     <div>
+      <Toggler/>
       <Listpicker values={[1,2,3]}/> {/*This is array being passed */}
       <Clicker/>
       <Counter/>
