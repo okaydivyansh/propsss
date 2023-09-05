@@ -18,6 +18,9 @@
 //     );
 // }
 
+
+//useState is a hook. we add it to add a state variable into a component
+// const [num,setNum]. num is the variable and setNum is the func used to change the state value
 import { useState } from "react";
 export default function Counter(){
     const [num,setNum]=useState(0);   {/*0 means starts with 0 */}
